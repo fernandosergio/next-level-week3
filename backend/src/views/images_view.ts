@@ -6,7 +6,7 @@ export default {
     render(image: Image){
         return  {
             id: image.id,
-            url: `http://localhost:5000/uploads/${image.path}`
+            url: `http://${process.env.IP}:5000/uploads/${image.path}`
           }
     },
     // Retorna todas as imagens
